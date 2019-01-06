@@ -1,0 +1,87 @@
+!MISC
+
+URxvt.font: xft:UbuntuMono Nerd Font Mono:size=10
+URxvt.scrollBar: false
+
+!Colors
+
+!URxvt*background: black
+URxvt*foreground: white
+
+!Other Colors
+#URxvt*color0: #000000
+#URxvt*color2: #cc0000
+#URxvt*color3: #4e9a06
+#URxvt*color4: #c4a000
+#URxvt*color5: #3465a4
+#URxvt*color6: #75507b
+#URxvt*color7: #06989a
+#URxvt*color8: #d3d7cf
+#URxvt*color9: #555753
+#URxvt*color8: #ef2929
+#URxvt*color9: #8ae234
+#URxvt*color10: #fce94f
+#URxvt*color11: #739fcf
+#URxvt*color12: #ad7fa8
+#URxvt*color13: #34e2e2
+#URxvt*color14: #eeeeec
+#URxvt*color15: #ffb6c1
+
+! special
+#*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #1d1f21
+*.color8:       #969896
+
+! red
+*.color1:       #cc342b
+*.color9:       #cc342b
+
+! green
+*.color2:       #25c964
+*.color10:      #25c964
+
+! yellow
+*.color3:       #fba922
+*.color11:      #fba922
+
+! blue
+*.color4:       #3971ed
+*.color12:      #3971ed
+
+! magenta
+*.color5:       #a36ac7
+*.color13:      #a36ac7
+
+! cyan
+*.color6:       #0f73fb
+*.color14:      #0f73fb
+
+! white
+*.color7:       #c5c8c6
+*.color15:      #ffffff
+
+!Transparancy
+
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
+
+!urxvt*transparent: true
+!urxvt*shading: 30
+
+URxvt.perl-ext-common: default,tabbed,matcher,resize-font,-tabbed,fullscreen
+!! Change font size on Control-Plus/Minus
+URxvt.resize-font.step: 2
+!URxvt.keysym.Control-0x2b: perl:font-size:increase
+!URxvt.keysym.Control-0x2d: perl:font-size:decrease
+
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-equal:      resize-font:bigger
+URxvt.keysym.C-plus:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+
+!!fullscreen mod
+URxvt.keysym.F11: perl:fullscreen:switch
